@@ -1,0 +1,487 @@
+
+<style>
+    .swiper {
+      width: 80%;
+      height: 100%;
+    }
+    .swiper-slide {
+       /* text-align: center; */
+    font-size: 18px;
+    height: 300px;
+    border-radius: 20px;
+    width: 30% !important;
+    margin: 0 28px;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+    }
+    .map_contact{
+      margin-top: 10px;
+     
+    }
+    .arrow{
+        color: deepskyblue;
+        font-size: 80pt;
+     }
+    .banner1{
+      background-image: url(./Asset/img/car.jpg);
+      height: 500px;
+      background-size: cover;
+      color: white;
+   }
+   .banner2{
+      background-image: url(./Asset/img/bike.jpg);
+      height: 500px;
+      background-size: cover;            
+   }
+   .bannerContent1{
+      margin-left: 200px;
+      margin-top: 100px;
+      width: 400px;
+      height: 250px;
+      background-color: rgb(255, 255, 255,0.5);
+      border-radius: 20px;
+      padding: 20px;
+      color: white;
+      font-size: 20pt;
+
+   }
+   .bannerContent2{
+      margin-left: 200px;
+      margin-top: 100px;
+      width: 400px;
+      height: 250px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 20px;
+      color: aliceblue;
+      font-size: 20pt;
+      
+   }
+   .user_star {
+    display: block;
+    margin: 20px 20px 180px 20px
+}
+  .star27 {
+    float: right;
+    font-size: 15pt;
+  }
+  .checked{
+    color: red;
+  }
+  .pt13{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15pt;
+ }
+ .send{
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    background-color:#65A3FF;
+    color: white;
+    border: 0px;
+    outline: auto;
+    
+   
+ }
+ .send:hover{
+  color: #0d5fda;
+ }
+ .name{
+    font-size: 13pt;
+    display: inline-block;
+ }
+   .phone30{
+    margin-right: 27px;
+  }
+ .address30{
+    margin-right: 15px;
+ }
+ .mail30{
+    margin-right: 33px;
+ }
+ .message30{
+    margin-right: 10px;
+ }
+.margin10{
+    margin-top: 10px;
+}
+ .text30{
+  font-size: 13pt;
+  display: inline-block;
+  margin-top: 10px;
+ }
+ .tab2{
+  margin-top: 30px;
+  width: 100%;
+ }
+ .tab1{
+  width: 100%;
+  text-align: center;
+ }
+ .mydiv1{
+  height: 500px;
+ }
+ .mydiv2{
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px 2px gray;
+  height: 550px;
+  border-radius: 20px;   
+  }
+ .map{
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 100%;
+  }
+ .input_text{
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  width: 90%;
+  height: 30px;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 0px;
+  outline: none;
+}
+.mess{
+  background-color: #d9d9d9;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 90%;
+  height: 200px;
+  padding: 5px 10px;
+  border: 0px;
+  outline: none;   
+}
+.all{
+    padding-bottom: 80px;
+}
+.comment300{
+  height: 50%;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+  </style>
+  <script>
+    function kiemtra() {
+        var sMess = document.getElementById("txtmess27").value;
+        var sName = document.getElementById("txtname27").value;
+        var sMail = document.getElementById("txtmail27").value;
+        var sAdd = document.getElementById("txtadd27").value;
+        var sPhone = document.getElementById("txtphone27").value;
+        var rePhone = /^\d{8,12}$/
+        var reMail = /^\w+[@]\w+[.]\w+$/;
+        
+        if(sName == ""){
+          alert("Full name field can't left blank!")
+          return false;
+        }
+        
+        if(!rePhone.test(sPhone)){
+          alert("Phone field can't left blank!");
+          document.getElementById("txtphone")
+          return false;
+          } 
+        if(!reMail.test(sMail)){
+          alert("Mail field can't left blank!");
+          document.getElementById("txtmail")
+          return false;
+          }
+       
+        if(sAdd == ""){
+          alert("Address field can't left blank!")
+          return false;
+          }
+        if(sMess == ""){
+          alert("Message field cant't left blank!")
+          return false;
+          }
+        var message = [];
+                    message.push("+++++++++++++++++++++++++++++") ;
+                    message.push("Name: " + sName) ;
+                    message.push("Phone: " + sPhone );
+                    message.push("Mail: " + sMail );
+                    message.push("Address: " + sAdd );
+                    message.push("Message: " + sMess );
+                    alert(message.join("\n"));
+      }
+  </script>
+  <div class="all">
+  <div class="background homeContent">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class=" carousel-item active banner1">
+           
+            <div class="bannerContent1">
+              Start a car insurance quote and see how much you can save!
+            </div>
+        </div>
+          <div class="carousel-item banner2">
+            <div class="bannerContent2">
+              Start a motobike insurance quote and see how much you can save!
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->  
+            <button  class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <div class="arrow"> ❮ </div>
+            </button>
+    
+            <button  class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <div class="arrow">❯</div>
+            </button>
+    </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper ">
+    <div class="swiper-wrapper comment300">
+      <div class="swiper-slide ">
+        <div class="user_star">
+            <img src="./Asset/img/avatar12.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span> 
+            </div>
+            <div class="pt13">
+            <p><h2>Davichi</h2></p>
+            Your service is very good
+          </div>
+        </div> 
+      </div>
+        <div class="swiper-slide ">
+        <div class="user_star">
+            <img src="./Asset/img/avatar2.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+        <div class="swiper-slide ">
+          <div class="user_star">
+            <img src="./Asset/img/avatar3.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+        <div class="swiper-slide ">
+          <div class="user_star">
+            <img src="./Asset/img/avatar4.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+        <div class="swiper-slide ">
+          <div class="user_star">
+            <img src="./Asset/img/avatar5.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+        <div class="swiper-slide ">
+          <div class="user_star">
+            <img src="./Asset/img/avatar6.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+        <div class="swiper-slide ">
+          <div class="user_star">
+            <img src="./Asset/img/avatar7.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+      <div class="swiper-slide ">
+          <div class="user_star">
+            <img src="./Asset/img/avatar8.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+        </div> 
+      </div>
+      <div class="swiper-slide">
+          <div class="user_star">
+            <img src="./Asset/img/avatar9.png" width="20%">
+            <div class="star27"> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            <div class="pt13">
+              <p><h2>Davichi</h2></p>
+              Your service is very good
+          </div>
+      </div> 
+    </div>
+  </div>
+    <div class="swiper-pagination "></div>
+  </div>
+</div>
+
+  <div class="mydiv1 container-fluid" >
+    <div class="row map_contact">
+        <div class="col-md-1"></div>
+        <div class="mydiv2 col-md-10">
+            
+            <table class="tab1">
+                <tr>
+                    <td>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668493!2d106.66410831515317!3d10.786376992314802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1662781398945!5m2!1svi!2s" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </td>
+                    <td>
+                      <form  onsubmit="return kiemtra()">
+                        <table class="tab2">
+                            
+                            <tr >
+                                <td></td>
+                                <td><h1>Contact us</h1></td>
+                                
+                            </tr>
+                            <tr class=" ">
+                                <td class=" name">Full name:*</td>
+                                <td ><input type class="input_text" id="txtname27" placeholder="Enter your name" type="text"></td>
+                            </tr>
+                            <tr >
+                                <td class="text30 phone30">Phone:*</td>
+                                <td><input type class="input_text margin10" id="txtphone27" placeholder="Enter your phone" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="text30 mail30">Email:*</td>
+                                <td><input type class="input_text margin10" id="txtmail27" placeholder="Enter your mail" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="text30 address30">Address:*</td>
+                                <td><input type class="input_text margin10" id="txtadd27" placeholder="Enter your address" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="text30 message30">Message:*</td>
+                                <td><textarea type class="mess" id="txtmess27" placeholder="Enter your message" name="" id="" cols="30" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" class="send" ></td>
+                            </tr>
+                        </table> 
+                      </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+  <!-- Swiper JS -->
+  
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  
+    
+ 
+  </script>
+

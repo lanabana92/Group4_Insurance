@@ -1,0 +1,455 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@media (min-width: 991.98px){
+    .Mprocess{
+        display: flex;
+        justify-content: space-around;
+        margin:auto;
+        align-items: center;
+        padding: 10px 60px;
+    }
+    .Mprocess2{
+        display: flex;
+        justify-content: space-around;
+        margin:auto;
+        
+        height: 100px;
+        
+    }
+    .Mprocess2 h2{
+        color: #244CB5;
+    }
+    .menu{ 
+        
+        width: 60%;    
+        padding: 0 20px;
+        height: 50px;        
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        }
+    .myJustify{
+        width: 100%;
+        justify-content:space-around;
+    }
+    .myList{
+        
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .dropdown-item:hover{
+        background-color: black!important;
+        color: white!important;
+    }
+    .myList:hover, .myList:focus {
+        padding: 10px;
+        background-color: black;
+        color: #FFFFFF;
+    }
+    .myList:active{
+        padding: 10px;
+        background-color: black;
+        color: #FFFFFF;
+    }
+
+    .myPosition{        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .myPromotion2{
+        display: none;
+    }
+    
+    }
+    @media (max-width: 991.98px){
+        #avatar1{
+        display: none;
+    }
+    .myList{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .myPromotion{
+        display: none;
+    }
+    .promoBox{
+        margin-top: 20px!important;
+    }
+    
+    .Mprocess{
+        width: 200px;
+        margin: auto;
+    }
+    .Mprocess2{
+        display: none;
+    }
+
+    }
+    nav{
+        position: fixed;
+        z-index: 100;
+    }
+    
+    /* .logo{
+        float: left;
+        width: 200px;
+        
+    } */
+    
+   .img5{
+    width: 50%;
+    border-radius: 50%;
+   }
+   #textlogo{
+    margin-top: 6px;
+    border: none;
+    font-size: 16pt;
+    outline: none;
+    background-color: transparent;
+    
+   }
+    #dropdown-menu{
+        margin-top: 10px;
+    }
+    #avatar1{
+        position: relative;
+        width: 150px;
+        height: auto;
+        display: flex;
+        right: -100px;
+        float: right;
+        display: show;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50px;
+        justify-content: center;
+        border: 0;
+        background-color: unset;
+    }
+    #avatar1:hover{
+        color: #FF9C29;
+    }
+    #avatar1:active{
+        color: #FF9C29;
+    }
+
+    
+    .clear{
+        clear: both;
+    }
+    #avatar1 a{
+        
+        text-decoration: none;
+        color: inherit;
+        
+    }
+    #avatar1 .bi{ 
+        margin-right: 10px;
+    }
+    .buffer{
+        width: 100%;
+        height:125.690px;
+    }
+    /* under 9 seater page */
+
+    #carQuoteContent{
+    
+        background-image: url(../img/Carbackground1.jpg);
+        background-size: cover;
+    }
+    .quoteBox{
+        
+    
+        padding: 50px;
+        width: 450px;
+        
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }  
+    
+    .contentBox1{
+        
+        width: 560px;
+        height: 671px;
+        padding: 20px;
+        margin-left: 50px;
+    
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+    .outer{
+        height: 100%;
+        
+        /* background-color: aqua; */
+    }
+    .mySelector1{
+        border: 0;
+        border-bottom: 1px solid #65A3FF;
+        background-color: transparent;
+        width: 100%;
+    }
+    
+    .mySelector2{
+        border: 0;
+        border-bottom: 1px solid #65A3FF;
+        background-color: transparent;
+        width: 20%;
+        text-align: center;
+    }
+    .mySubmit1{
+       
+        margin-top: 20px;
+        padding: 5px 10px!important;
+    }
+    .myTable1{
+        margin-top: 100px!important;
+        margin-bottom: 100px;
+    }
+    
+    .tab2{
+        background-color: white;
+        padding: 10px
+    }
+    .myBanner1{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    /* above 9 seater page */
+    #carQuoteContent2{
+    
+        background-image: url(../img/ford.jpg);
+        background-size: cover;
+    }
+    
+    .quoteBox2{
+        
+    
+        padding: 50px;
+        width: 450px;
+        
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+    }  
+    
+    .contentBox3{
+        
+        width: 560px;
+        height: 671px;
+        padding: 20px;
+        margin-left: 50px;
+    
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        
+    }
+    /* Luxary car */
+    #carQuoteContent3{
+    
+        background-image: url(../img/RollroyceBackround.jpg);
+        background-size: cover;
+    }
+    
+    .quoteBox3{
+        
+        
+        padding: 50px;
+        width: 450px;
+        color: #FFFFFF;
+        background: rgba(10, 10, 10, 0.7);
+        border-radius: 20px;
+    }  
+    
+    .contentBox4{
+        
+        width: 560px;
+        height: 671px;
+        padding: 20px;
+        margin-left: 50px;
+    
+        background: rgba(6, 6, 6, 0.7);
+        border-radius: 20px;
+        
+    }
+    .mySelector3{
+        border: 0;
+        color: #FFFFFF;
+        border-bottom: 1px solid #65A3FF;
+        background-color: transparent;
+        width: 100%;
+    }
+    
+    .mySelector4{
+        color: #FFFFFF;
+        border: 0;
+        border-bottom: 1px solid #65A3FF;
+        background-color: transparent;
+        width: 20%;
+        text-align: center;
+    }
+    /* footer */
+    .footer{
+        margin-top:30px;
+        font-size: 10pt;
+        margin-bottom: 30px;
+    }
+    .myText01{
+        margin-top: 60px!important;
+        text-align: center;
+    }
+   .MyInput23{
+    border: 0;
+    width: 270px;
+   }
+   .MyInput23:focus {
+    outline: none
+   }
+
+   .myEmailfooter{
+    border-bottom: 1px solid gray;
+    width: 300px;
+   }
+   .logo2{
+    margin-left: 50px;
+   }
+   /* PTI */
+   .PTIcontent{
+    margin-top: 50px!important;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 30px!important;
+    box-shadow: 0px 0px 10px 5px gray;
+    background-color: rgba(255, 255, 255, 0.9);
+   }
+   .PTItext1{
+    padding-left: 20px;
+    width: 90%;
+    margin: auto;
+   }
+   .PTItable{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 1px solid gray;
+    border-collapse: collapse!important;
+    border-radius: 20px!important;
+    margin-bottom: 30px;
+   }
+   .colum1, .colum2, .colum3 {
+    border: 1px solid gray;
+    padding: 10px;
+
+   }
+   
+   .colum1{
+    text-align: center;
+   }
+   .Theader{
+    background-color: #0066FF;
+    color: white;
+    text-align: center;
+   }
+   .PTIcontainer{
+    background-image: url(../img/motorcyclebackground.jpg);
+    background-size: cover;
+   }
+   /* Motorcycle */
+   .MouterB{
+    background-image: url(../img/woman-riding-motorcyle-motorbike\ banner.jpg);
+    height: 483px;
+    background-size: cover;
+    
+   }
+   .Mbander{
+    height: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+   }
+   .Mcontent{
+    height: 320px;
+    width: 636px ;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px;
+
+   }
+    /* Lognin */
+    html {
+        height: 100%;
+      }
+      body {
+       
+        padding:0;
+        font-family: sans-serif;
+        
+      }
+      
+      .login-box {
+        position: absolute;
+        left: 50%;
+        margin-top: 250px;
+        width: 500px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgba(51, 46, 46, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+      }
+      
+      .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 30pt;
+      }
+      
+      .login-box .user-box {
+        position: relative;
+        outline: none;
+        background: transparent;
+      }
+      
+      .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        
+      }
+
+      .login-box .user-box label {
+        position: absolute;
+        top:0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: rgb(240, 233, 233);
+        pointer-events: none;
+        transition: .5s;
+      }
+      
+      .login-box .user-box input:focus ~ label,
+      .login-box .user-box input:valid ~ label {
+        top: -30px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 14px;
+      }
+      
+      
+      

@@ -1,0 +1,313 @@
+
+   <div  class="container-fluid" id="myDiv0">
+    <div class="row">
+        <div class="col-md-2 "></div>
+
+<div class="grid-container">
+    <div class="grid-item1 animate__animated animate__fadeInTopLeft"><br><h2><b>Custom information</b></h2>
+        <hr class="hr2"><br>
+         <b>Account name:</b> Le Van A<br>
+        <b>Address:</b> CC 155 Nguyen Tri Thanh P9 Q5 HCM <br>
+        <b>Email:</b> levana09@gmail.com<br>
+         <b>Date of birth:</b> 09/05/1989<br>
+         <b>Phone:</b> 0909557766<br>
+
+    </div>
+    <div class="grid-item2">
+      <div class="row">
+        <div class="small-12 medium-2 large-2 columns">
+          <div class="circle" >
+            <!-- User Profile Image -->
+            <img class="profile-pic animate__animated animate__zoomIn" src="Asset/Img/avatar.png">
+     
+            <!-- Default Image -->
+            <!-- <i class="fa fa-user fa-5x"></i> -->
+          </div>
+          <div class="p-image">
+            <i class="fa fa-camera upload-button"></i>
+             <input class="file-upload" type="file" accept="image/*"/>
+          </div>
+       </div>
+     </div>
+        <div class="mydiv5"><b id="b2">Original password:</b><input type="password" placeholder=" Enter original password" class="inputtext1"></div> 
+        <div class="mydiv2"><b id="b1">New password:</b> <input type="password" id="txtNewPassword" placeholder=" Enter new password" name="pass" class="inputtext2"></div>
+       <div class="mydiv3"> <b>Confrim password: </b><input type="password" id="txtConfirmPassword" placeholder=" Confirm Password" name="confpass" class="inputtext3"></div>
+       <div class="registrationFormAlert" style="color:red;" id="CheckPasswordMatch"></div>
+        <div class="mydiv4"><button type="submit" class="btn btn-primary" onclick="checkPasswordMatch1()">Change password</button></div>
+  </div>
+</div>
+  <div class="mydiv1">
+    <h2><b>Insurance information</b></h2>
+    <hr class="hr4">
+  </div>
+
+<div class="grid-container1">
+    <div class="grid-item3 animate__animated animate__fadeInTopLeft"><br>
+         <b>Vehicle 1:</b> Luxury car<br>
+        <b>Type:</b>  Lamborghini Aventador <br>
+        <b>Brand:</b> Lamboghini<br>
+         <b>Insurance package: </b> Option 1
+         Car usage under 3 years<br>
+         <b>Insurance fee:</b> 52.234.000VND<br>
+    </div>
+      <div class="grid-item4 animate__animated animate__backInRight">
+        <img src="Asset/Img/lammmmm.jpg" class="img2">
+      </div>
+    </div>
+</div>
+<div class="grid-container2">
+  <div class="grid-item3 animate__animated animate__fadeInDown"><br>
+    
+    <div class="btn-group">
+      <button  type="button"class="bt1" data-bs-toggle="dropdown"><i id="cart1" class="fa-sharp fa-solid fa-cart-plus" ></i></button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#!Car">Under 9 - Seaters</a></li>
+        <li><a class="dropdown-item" href="#!Car2">Above 9 - Seaters</a></li>
+        <li><a class="dropdown-item" href="#!LuxuryCar">Luxury Car</a></li>
+        <li><a class="dropdown-item" href="#!Motor">Motocycle</a></li>
+      </ul>
+  </div>
+  </div>
+    <div class="grid-item5 animate__animated animate__fadeInDown">
+      <div class="btn-group">
+        <button  type="button"class="bt2" data-bs-toggle="dropdown"><i id="cart2" class="fa-sharp fa-solid fa-cart-plus" ></i></button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#!Car">Under 9 - Seaters</a></li>
+          <li><a class="dropdown-item" href="#!Car2">Above 9 - Seaters</a></li>
+          <li><a class="dropdown-item" href="#!LuxuryCar">Luxury Car</a></li>
+          <li><a class="dropdown-item" href="#!Motor">Motocycle</a></li>
+        </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+  <style>
+  .bt2{
+      border: 0;
+      background-color: transparent;
+    }
+    .bt1{
+      border: 0;
+      background-color: transparent;
+    }
+   #cart1{
+    font-size: 160px;
+    color: #1c4daf;
+    text-align: center;
+    margin-left: 100px;
+   }
+   #cart2{
+    font-size: 160px;
+    color: #1c4daf;
+    text-align: center;
+    margin-left: 100px;
+   }
+      #b2{
+      padding-right: 5px;
+    }
+    #b1{
+      padding-right: 38px;
+    }
+    .mydiv5{
+      margin-top: 10px;
+    }
+    .mydiv2{
+      margin-top: 10px;
+    }
+    .mydiv3{
+      margin-top: 10px;
+    }
+    .mydiv4{
+      margin-top: 15px;
+    }
+.registrationFormAlert{
+  margin-left:  220px;
+}
+ .inputtext1{
+    width: 35%;
+    height: 25px;
+    background: #e9e4e4;
+    border-radius: 10px;
+   border: 0px;
+   
+ }
+ .inputtext2{
+    width: 35%;
+    height: 25px;
+    background: #e9e4e4;
+    border-radius: 10px;
+   border: 0px;
+ }
+ .inputtext3{
+    width: 35%;
+    height: 25px;
+    background: #e9e4e4;
+    border-radius: 10px;
+    padding-right: 30px;
+   border: 0px;
+ }
+.profile-pic {
+    max-width: 170px;
+    max-height: 170px;
+    display: block;
+    border-radius: 50%;
+}
+
+.file-upload {
+    display: none;
+}
+.row{
+  margin-bottom: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+  margin-top: -40px;
+  margin-left: 150px;
+  color: #3426cb;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+    margin-left: 130px;
+    margin-right: 100px;
+  }
+  .grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 220px;
+    margin-left: 90px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    width: 89%;
+box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+  }
+  .grid-container2{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 220px;
+    margin-left: 80px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    width: 90%;
+box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+  }
+  
+  .grid-item1 {
+      width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  border-radius: 30px;
+ padding-left: 50px;
+ margin-top: 20px;
+  }
+  .grid-item2 {
+      width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  border-radius: 30px;
+  padding-left: 50px;
+  }
+  .grid-item3 {
+      width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  border-radius: 30px;
+  padding-left: 50px;
+  }
+  .grid-item4 {
+      width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  border-radius: 30px;
+  }
+  .grid-item5 {
+      width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 35%;
+  border-radius: 30px;
+  }
+  .hr2{
+    width: 500px;
+    border: 3px solid #d47810;
+}
+.hr4{
+    width: 500px;
+    border: 3px solid #d47810;
+    margin: auto;
+}
+.img1{
+    width: 40%;
+   
+}
+.mydiv1{
+    margin-top: 20px;
+    text-align: center;
+}
+</style>
+<script>
+$(document).ready(function() {
+
+    
+var readURL = function(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.profile-pic').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+$(".file-upload").on('change', function(){
+    readURL(this);
+});
+
+$(".upload-button").on('click', function() {
+   $(".file-upload").click();
+});
+});
+  function checkPasswordMatch() {
+      var password = $("#txtNewPassword").val();
+      var confirmPassword = $("#txtConfirmPassword").val();
+      if (password != confirmPassword)
+          $("#CheckPasswordMatch").html("Passwords does not match!");
+      else
+          $("#CheckPasswordMatch").html("");
+  }
+  function checkPasswordMatch1() {
+      var password = $("#txtNewPassword").val();
+      var confirmPassword = $("#txtConfirmPassword").val();
+      if (password != confirmPassword)
+          alert("Passwords does not match!");
+      else
+          alert("SUCCESSFULLY");
+  }
+  $(document).ready(function () {
+     $("#txtConfirmPassword").keyup(checkPasswordMatch);
+  });
+
+  </script>

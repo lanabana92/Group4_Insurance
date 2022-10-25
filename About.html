@@ -1,0 +1,73 @@
+<style>
+    .aboutContent{
+    margin-top: 50px!important;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 30px!important;
+    box-shadow: 0px 0px 10px 5px gray;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+    }
+
+    .Aboutcontainer{
+    background-image: url(./Asset/img/aboutus.jpg);
+    background-size: cover;
+   }
+    .para{
+        text-align: justify;
+        padding-right: 50px;
+    }
+    .image1{
+        margin-top: 80px;
+    }
+    .button1{
+        border-radius: 20px;
+    }
+    .para2{
+        text-align: justify;
+        padding-left: 50px;
+    }
+</style>
+<div class="container-fluid Aboutcontainer">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 aboutContent animate__animated animate__slideInUp">
+            <div style="display:flex ;">
+                <div class="para">
+                    WHO WE ARE
+                    <H1>About us</H1>
+                    Insurance policies have evolved since the Philadelphia Contributionship, but the basic principles behind the policies haven't changed much over the years. The Better Business Bureau notes that automobile insurance plays a crucial role in protecting consumers from the financial losses that car accidents can cause, and that losses from property damage, medical bills, legal fees and lost income add up to billions of dollars every year.
+    
+                    While Ben Franklin wasn't thinking about cars when he formed the first insurance company, his action proved that insurance products and services can provide much-needed peace of mind.<br><br>
+                    
+                </div>
+                <div class="image1">
+                    <img src="./Asset/img/aboutus stage.jpg" alt="" width="500px">
+                </div> 
+            </div>
+            <div id="part2" style="display: none;" class="animate__animated animate__zoomIn">
+                <div  style="display:flex; margin-bottom:20px;">
+                    <div class="image2">
+                        <img src="./Asset/img/vision.png" alt="" width="500px">
+                    </div> 
+                    <div class="para2">
+                       
+                        <H1>Our mission</H1>
+                        Even if it’s just a few sentences, a vision statement provides a lot of value. Not only does it outline the company’s desired outcome, but it can communicate intentions and hopes for the future. The best part is that a vision statement changes with your organization. When a vision is reached or updated, it’s time to create a new vision statement. This encourages everyone toward greater goals, and opens your company to more possibilities. <br><br>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary button1">Read more</button>  
+        </div>
+        
+    </div>
+</div>
+<script>
+     $(document).ready(function(){
+  $(".button1").click(function(){
+    $("#part2").toggle();
+    });
+    });
+</script>
